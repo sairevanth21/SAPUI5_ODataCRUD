@@ -1,0 +1,52 @@
+
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        id="createProductDialogs"
+        title="Create Product"
+        draggable="true"
+        resizable="true"
+        class="sapUiContentPadding">
+
+        <VBox class="sapUiSmallMargin">
+
+            <Label text="Product ID"/>
+            <Input   value="{Id}" id="prodIdInput1"/>
+
+            <Label text="Name"/>
+            <Input value="{Name}" id="nameInput1"/>
+
+            <Label text="Description"/>
+            <Input value="{Description}" id="descInput1"/>
+
+            <Label text="Release Date"/>
+            <DatePicker  value="{ReleaseDate}" id="releaseDateInput1"/>
+
+            <Label text="Discontinued Date"/>
+            <DatePicker value="{DiscontinuedDate}" id="discontinuedDateInput1"/>
+
+            <Label text="Price"/>
+            <Input  value="{Price}" id="priceInput1" type="Number"/>
+
+            <Label text="Rating"/>
+            <Input value="{Rating}" id="ratingInput1" type="Number"/>
+
+        </VBox>
+
+        <beginButton>
+            <Button
+                text="Save"
+                type="Emphasized"
+                press="onCreateConfirm1"/>
+        </beginButton>
+
+        <endButton>
+            <Button
+                text="Cancel" 
+                press=" onCancelProduct1"/>
+        </endButton>
+
+    </Dialog>
+</core:FragmentDefinition>
